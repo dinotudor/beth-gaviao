@@ -92,13 +92,13 @@ export default function ContactForm() {
                     className="flex items-center text-blue-600 hover:text-blue-800"
                 >
                     <Instagram />
-                    <span className="ml-2">Siga no Instagram</span>
+                    <span className="ml-2 text-sm">Siga no Instagram</span>
                 </Link>
                 <Link
                     href="mailto:contato@bethgaviao.com"
                     className="flex items-center text-blue-600 hover:text-blue-800"
                 >
-                    <Mail className="w-5 h-5 mr-2" />
+                    <Mail className="w-5 h-5 mr-2 text-sm" />
                     Envie um Email
                 </Link>
             </div>
