@@ -84,7 +84,7 @@ export default function ContactForm() {
                 </button>
                 {status && <p className="text-center text-sm mt-2">{status}</p>}
             </form>
-            <div className="flex items-center justify-between mt-4">
+            <div className="flex items-start flex-col justify-between mt-4 lg:flex-row lg:items-center gap-2">
                 <Link
                     href="https://www.instagram.com/"
                     target="_blank"
@@ -98,7 +98,7 @@ export default function ContactForm() {
                     href="mailto:contato@bethgaviao.com"
                     className="flex items-center text-blue-600 hover:text-blue-800"
                 >
-                    <Mail className="w-5 h-5 mr-2 ml-4" />
+                    <Mail className="w-5 h-5 mr-2" />
                     Envie um Email
                 </Link>
             </div>

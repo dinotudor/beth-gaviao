@@ -22,7 +22,7 @@ export default function ImageGallery() {
     };
 
     return (
-        <div className="columns-3 gap-2 p-8">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-2 p-8">
             {images.map((src, index) => (
                 <Link key={index} href="#" onClick={() => openModal(src)}>
                     <div className="relative group mb-2 overflow-hidden cursor-pointer">
