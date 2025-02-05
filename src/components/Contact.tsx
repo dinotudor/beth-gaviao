@@ -96,9 +96,9 @@ export default function ContactForm() {
                 </Link>
                 <Link
                     href="mailto:contato@bethgaviao.com"
-                    className="flex items-center text-blue-600 hover:text-blue-800"
+                    className="flex items-center text-blue-600 hover:text-blue-800 text-sm"
                 >
-                    <Mail className="w-5 h-5 mr-2 text-sm" />
+                    <Mail className="w-5 h-5 mr-2" />
                     Envie um Email
                 </Link>
             </div>
