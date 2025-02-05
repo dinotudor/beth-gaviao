@@ -86,7 +86,15 @@ export default function ImageGallery() {
                                 sizes="300px"
                                 className="w-full h-auto rounded-lg transition-transform duration-300 group-hover:scale-110"
                             />
-                            <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <h3 className="text-white text-lg font-semibold">
+                                    {img.title}
+                                </h3>
+                                <p className="text-white text-sm">
+                                    {img.date ?? ""}
+                                </p>
+                            </div>
                         </div>
                     </Link>
                 ))}
