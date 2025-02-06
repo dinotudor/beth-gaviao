@@ -22,10 +22,12 @@ export default function Navbar() {
                 isMenuOpen ? "grow" : ""
             }`}
         >
-            <div className="flex items-center">
-                <CameraIcon className="w-6 text-gray-500 mr-2" />
-                <h1 className="text-xl font-bold mr-4">Beth Gavião</h1>
-            </div>
+            <Link href={"/"}>
+                <div className="flex items-center">
+                    <CameraIcon className="w-6 text-gray-500 mr-2" />
+                    <h1 className="text-xl font-bold mr-4">Beth Gavião</h1>
+                </div>
+            </Link>
 
             {/* Desktop Links */}
             <div className="hidden md:flex space-x-2">
@@ -34,7 +36,9 @@ export default function Navbar() {
                         key={item.href}
                         href={item.href}
                         className={`${
-                            pathName === item.href ? "bg-gray-400" : ""
+                            pathName === item.href
+                                ? "bg-gray-400 text-white"
+                                : ""
                         } px-4 py-2 text-gray-600 rounded-xl hover:bg-gray-400 transition-colors duration-300`}
                     >
                         {item.label}
@@ -62,7 +66,9 @@ export default function Navbar() {
                             key={item.href}
                             href={item.href}
                             onClick={toggleMenu}
-                            className={`block text-left opacity-80 px-4 py-2 text-gray-600 rounded-xl hover:bg-gray-400 transition-colors duration-300`}
+                            className={`${
+                                pathName === item.href ? "underline" : ""
+                            } block text-left opacity-80 px-4 py-2 text-gray-600 rounded-xl hover:bg-gray-400 transition-colors duration-300`}
                         >
                             {item.label}
                         </Link>

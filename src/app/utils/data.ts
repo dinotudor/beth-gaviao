@@ -77,7 +77,7 @@ export const ImageMetaData: ImageDataType[] = [
         src: "/gallery/img11.jpg",
         title: "Title 11",
         category: CategoriesEnum.Nature,
-        date: "",
+        date: "Mar. 2018",
     },
     {
         src: "/gallery/img12.jpg",
