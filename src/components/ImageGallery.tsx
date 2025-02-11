@@ -14,6 +14,7 @@ export default function ImageGallery() {
     const categories: string[] = Object.values(CategoriesEnum);
 
     const isAllSelected = selectedCategories.length === categories.length;
+    const isNoneSelected = selectedCategories.length === 0;
 
     const toggleCategory = (category: string) => {
         setSelectedCategories((prev) =>
@@ -25,6 +26,10 @@ export default function ImageGallery() {
 
     const toggleSelectAll = () => {
         setSelectedCategories(isAllSelected ? [] : [...categories]);
+    };
+
+    const toggleSelectNone = () => {
+        setSelectedCategories(isNoneSelected ? [...categories] : []);
     };
 
     const filteredImages =
@@ -62,11 +67,21 @@ export default function ImageGallery() {
                 ))}
                 <button
                     onClick={toggleSelectAll}
+                    disabled={isAllSelected}
                     className={`px-3 py-1 text-sm md:px-4 md:py-2 rounded-lg ${
                         isAllSelected ? "bg-gray-400 text-white" : "bg-gray-200"
                     }`}
                 >
-                    {isAllSelected ? "Limpar" : "Todas"}
+                    Todas
+                </button>
+                <button
+                    onClick={toggleSelectNone}
+                    disabled={isNoneSelected}
+                    className={`px-3 py-1 text-sm md:px-4 md:py-2 rounded-lg ${
+                        isAllSelected ? "bg-gray-400 text-white" : "bg-gray-200"
+                    }`}
+                >
+                    Limpar
                 </button>
             </div>
 
