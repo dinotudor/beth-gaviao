@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
-import { CategoriesEnum, ImageMetaData } from "@/app/utils/data";
+import { CategoriesEnum, ImageMetaData } from "@/utils/data";
 
 export default function ImageGallery() {
     const [isOpen, setIsOpen] = useState(false);

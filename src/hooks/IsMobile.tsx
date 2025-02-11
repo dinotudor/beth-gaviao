@@ -24,18 +24,6 @@ export function useMobile(breakpoint: number = 768) {
     };
 }
 
-export function MobileDetectionExample() {
-    const { isMobile, windowWidth } = useMobile(768);
-
-    return (
-        <div>
-            <h1>Device Detection</h1>
-            <p>Is Mobile: {isMobile ? "Yes" : "No"}</p>
-            <p>Window Width: {windowWidth}px</p>
-        </div>
-    );
-}
-
 export function useTouchDevice() {
     const [isTouchDevice, setIsTouchDevice] = useState(false);
 

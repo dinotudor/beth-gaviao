@@ -4,7 +4,7 @@ import pic from "../../public/pic-test2.jpg";
 export default function HomeContent() {
     return (
         <section className="p-2 ">
-            <h1 className="text-2xl font-bold text-center">Bio</h1>
+            <h1 className="text-2xl font-bold text-center mt-4 mb-4">Bio</h1>
             <p className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-800 mb-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 at hendrerit enim. Fusce ut sollicitudin velit. Aliquam erat
